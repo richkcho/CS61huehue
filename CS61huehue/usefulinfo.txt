@@ -1,0 +1,86 @@
+http://cs61.seas.harvard.edu/feedback/
+http://cs61.seas.harvard.edu/feedback/board.html?neww=1
+
+MESSAGE:
+POST http://cs61-fall-2013.seas.harvard.edu:6169/cs61/login HTTP/1.1
+Host: cs61-fall-2013.seas.harvard.edu:6169
+Connection: keep-alive
+Content-Length: 0
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://cs61.seas.harvard.edu
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36
+Referer: http://cs61.seas.harvard.edu/feedback/
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8,de;q=0.6,ru;q=0.4,zh-CN;q=0.2
+
+RESPONSE:
+HTTP/1.1 200 OK
+Set-Cookie: feedback61=eyJzIjozODYwODUyMzEsImlkIjoiYnpFREYra2siLCJuIjoiY3M2MSJ9&S6JqDjmZNmaxKmWvMSsPs4aU681xcdNOIHX7AF3uRsA=; path=/cs61/; httponly
+Content-Type: text/plain
+Content-Length: 14
+Access-Control-Allow-Origin: http://cs61.seas.harvard.edu
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept-Encoding
+Date: Tue, 02 Sep 2014 19:10:20 GMT
+Connection: keep-alive
+
+{"retry":true}
+
+SECOND LOGIN (TO GET ID ASSIGNED):
+POST http://cs61-fall-2013.seas.harvard.edu:6169/cs61/login HTTP/1.1
+Host: cs61-fall-2013.seas.harvard.edu:6169
+Connection: keep-alive
+Content-Length: 0
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://cs61.seas.harvard.edu
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36
+Referer: http://cs61.seas.harvard.edu/feedback/
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8,de;q=0.6,ru;q=0.4,zh-CN;q=0.2
+Cookie: feedback61=eyJzIjozODYwODUyMzEsImlkIjoiYnpFREYra2siLCJuIjoiY3M2MSJ9&S6JqDjmZNmaxKmWvMSsPs4aU681xcdNOIHX7AF3uRsA=
+
+
+
+ASK MESSAGE:
+POST http://cs61-fall-2013.seas.harvard.edu:6169/cs61/ask HTTP/1.1
+Host: cs61-fall-2013.seas.harvard.edu:6169
+Connection: keep-alive
+Content-Length: 32
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://cs61.seas.harvard.edu
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://cs61.seas.harvard.edu/feedback/
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8,de;q=0.6,ru;q=0.4,zh-CN;q=0.2
+Cookie: feedback61=eyJzIjozODYwODUyMzEsImlkIjoiYnpFREYra2siLCJuIjoiY3M2MSJ9&S6JqDjmZNmaxKmWvMSsPs4aU681xcdNOIHX7AF3uRsA=
+
+q=HUEHUEHUEHUEHUEHUE%3F%3F%3F%3F
+
+RED:
+POST http://cs61-fall-2013.seas.harvard.edu:6169/cs61/feedback/stop HTTP/1.1
+Host: cs61-fall-2013.seas.harvard.edu:6169
+Connection: keep-alive
+Content-Length: 0
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://cs61.seas.harvard.edu
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36
+Referer: http://cs61.seas.harvard.edu/feedback/
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Cookie: feedback61=eyJzIjozODYwODUyMzEsImlkIjoiYnpFREYvSWsiLCJuIjoiY3M2MSJ9&hcCflP3g55BR24H74bYPryNSvmPS4rjNHkS0cS2Yf6I=; _ga=GA1.3.1951545328.1409664432
+
+GREEN:
+POST http://cs61-fall-2013.seas.harvard.edu:6169/cs61/feedback/ok HTTP/1.1
+Host: cs61-fall-2013.seas.harvard.edu:6169
+Connection: keep-alive
+Content-Length: 0
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://cs61.seas.harvard.edu
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36
+Referer: http://cs61.seas.harvard.edu/feedback/
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Cookie: feedback61=eyJzIjozODYwODUyMzEsImlkIjoiYnpFREYvSWsiLCJuIjoiY3M2MSJ9&hcCflP3g55BR24H74bYPryNSvmPS4rjNHkS0cS2Yf6I=; _ga=GA1.3.1951545328.1409664432
+
+
